@@ -1,0 +1,219 @@
+/* 全局盒模型重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 基础页面样式 */
+body {
+    font-family: "微软雅黑", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 头部样式 */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 导航栏样式 */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* 主体容器 */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* 通用区块样式 */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 个人资料卡片 */
+.profile-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 10px;
+}
+
+/* 基本信息网格布局 */
+.basic-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.info-item {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* 兴趣与技能网格布局 */
+.hobbies-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.hobby-item {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9f5ff;
+    border-radius: 6px;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+/* 兴趣详情卡片 */
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* 技能详情卡片 */
+.skill-card {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-info {
+    text-align: left;
+}
+
+/* 联系方式表格样式 */
+.contact-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 15px;
+    text-align: left; /* 文字左对齐 */
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* 表单样式 */
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .profile-img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .hobby-img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .placeholder-img {
+        max-height: 200px;
+    }
+
+    .basic-info {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
