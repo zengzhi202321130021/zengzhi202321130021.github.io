@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>我的个人网站</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="portfolio.html">作品集</a></li>
+                <li><a href="contact.html">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 联系方式表格 -->
+        <section class="contact-info">
+            <h2>联系方式</h2>
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>类型</th>
+                        <th>信息</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>📧 邮箱</td>
+                        <td>2189174348@qq.com</td>
+                    </tr>
+                    <tr>
+                        <td>📞 电话</td>
+                        <td>15082492360</td>
+                    </tr>
+                    <tr>
+                        <td>📞 备用电话</td>
+                        <td>暂无</td>
+                    </tr>
+                    <tr>
+                        <td>💬 微信</td>
+                        <td>zzyyazjj</td>
+                    </tr>
+                    <tr>
+                        <td>🐧 QQ</td>
+                        <td>2189174348</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 留言表单 -->
+        <section class="contact-form">
+            <h2>留言表单</h2>
+            <form action="mailto:2189174348@qq.com" method="post" enctype="text/plain">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">邮箱：</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">留言内容：</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">发送留言</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 版权所有 | 联系邮箱：2189174348@qq.com</p>
+    </footer>
+</body>
+</html>
